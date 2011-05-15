@@ -1,2 +1,2 @@
 
-$('a[href|="videos\\/"]').css('background','#000');
+$('a[href^="videos/"]').css('background','#000');
