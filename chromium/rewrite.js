@@ -1,2 +1,4 @@
 
-$('.playlist a[href^="videos/"]').css('background','#000');
+$('.playlist a[href^="videos/"]').attr('href', function() {
+    return $(this).attr('href') + '?size=hd';
+});
