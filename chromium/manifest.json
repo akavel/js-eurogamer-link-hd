@@ -1,11 +1,13 @@
 {
-  "name": "My First Extension",
+  "name": "Eurogamer HD-video link redirect",
   "version": "1.0",
-  "description": "Google tutorial extension - http://code.google.com/chrome/extensions/getstarted.html",
-  "browser_action": {
-    "default_icon": "icon.png",
-    "popup": "popup.html"
-  },
+  "description": "When viewing Eurogamer videos list, makes the links point to HD videos",
+  "content_scripts": [
+    {
+      "matches": ["http://*.eurogamer.net/videos/trailers*"],
+      "js": ["jquery.js", "rewrite.js"]
+    }
+  ],  
   "permissions": [
     "http://api.flickr.com/"
   ]
