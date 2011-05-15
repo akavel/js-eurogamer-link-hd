@@ -1,3 +1,3 @@
-$('.playlist a[href^="videos/"]:not([href$="#comments"])').attr('href', function() {
-    return $(this).attr('href') + '?size=hd';
+$('.playlist a[href^="videos/"]:not([href$="#comments"])').attr('href', function(i, href) {
+    return href + '?size=hd';
 });
