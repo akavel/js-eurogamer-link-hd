@@ -1,2 +1,2 @@
 
-$('a[href^="videos/"]').css('background','#000');
+$('.playlist a[href^="videos/"]').css('background','#000');
